@@ -1,3 +1,3 @@
 <footer>
-    Made by &hearts; by Boolean.
+    Made with &hearts; by Boolean.
 </footer>

@@ -5,7 +5,7 @@
         <div class="row">
             @foreach($movies as $movie)
                 <div class="card">
-                    <h2>Titolo: {{ $movie->title }}</h2>
+                    <h2>{{ $movie->title }}</h2>
                     <small>Titolo originale: {{ $movie->original_title }}</small>
                     <p>
                         Nazionalità: {{ $movie->nationality }}<br>

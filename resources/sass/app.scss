@@ -15,22 +15,41 @@ body {
 .row{
     display: flex;
     flex-wrap: wrap;
-    margin: -1em;
+    margin: -1rem;
 }
 .card{
-    flex-basis: 150px;
+    flex-basis: 100%;
+    margin: .2rem;
+    // max-width: calc(100% - 2rem);
     min-height: 4rem;
-    flex-grow: 1;
-    margin: 1em;
-    padding: .8em;
+    // flex-grow: 1;
+    padding: 1rem;
     border-radius: 2em;
     background-color: rgba(0, 0, 0, 0.097);
 }
 main {
     background-color: #96b0bc;
-    height: calc(100% - 6rem);
+    height: calc(100% - var(--HEADER_HEIGHT) - var(--FOOTER_HEIGHT));
     overflow-y: auto;
 }
 #movies-list {
     padding: 2rem;
+}
+
+@media screen and (min-width: 560px) {
+    :root {
+        --COL_NUMBER: 2;
+        --GAP: .4rem;
+    }
+
+    .card{
+        flex-basis: calc(100% / var(--COL_NUMBER) - var(--GAP));
+        margin: calc(var(--GAP) / 2);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --COL_NUMBER: 3;
+    }
 }
