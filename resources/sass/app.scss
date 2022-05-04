@@ -1,4 +1,13 @@
 //
+@import 'vars';
+@import 'reset';
+@import 'header';
+@import 'footer';
+
+body {
+    height: 100vh;
+}
+
 .container {
     margin: 0 auto;
     max-width: 900px;
@@ -10,6 +19,18 @@
 }
 .card{
     flex-basis: 150px;
+    min-height: 4rem;
     flex-grow: 1;
     margin: 1em;
+    padding: .8em;
+    border-radius: 2em;
+    background-color: rgba(0, 0, 0, 0.097);
+}
+main {
+    background-color: #96b0bc;
+    height: calc(100% - 6rem);
+    overflow-y: auto;
+}
+#movies-list {
+    padding: 2rem;
 }

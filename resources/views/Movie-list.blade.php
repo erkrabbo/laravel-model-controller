@@ -1,22 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Netflix pt.9999</title>
+ @include("static.header")
 
-    <link rel="stylesheet" href="{{ asset("css/app.css") }}">
-</head>
-<body>
+<main id="movies-list">
     <div class="container">
         <div class="row">
             @foreach($movies as $movie)
                 <div class="card">
-                    <h2>{{ $movie->title }}</h2>
+                    <h2>Titolo: {{ $movie->title }}</h2>
+                    <small>Titolo originale: {{ $movie->original_title }}</small>
+                    <p>
+                        Nazionalità: {{ $movie->nationality }}<br>
+                        Anno di produzione: {{ $movie->date}}<br>
+                        Voto: {{ $movie->vote}}
+                    </p>
                 </div>
             @endforeach
         </div>
     </div>
+</main>
+
+@include("static.footer")
 </body>
 </html>

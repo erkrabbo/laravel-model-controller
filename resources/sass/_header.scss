@@ -1,0 +1,11 @@
+header {
+    height: var(--HEADER_HEIGHT);
+    background-color: black;
+    display: flex;
+    align-items: center;
+    color: red;
+    padding: 0 1rem;
+    h1 {
+        font-size: 3rem;
+    }
+}
