@@ -1,0 +1,17 @@
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1em;
+}
+
+.card {
+  flex-basis: 150px;
+  flex-grow: 1;
+  margin: 1em;
+}
+
